@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/descricao_produto_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/id_Produto_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descricao_produto_editText"
+        android:layout_alignEnd="@+id/descricao_produto_editText"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSalvarProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_Produto_editText"
+        android:layout_alignStart="@+id/id_Produto_editText"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="67dp"
+        android:text="SALVAR PRODUTO" />
+
+    <Button
+        android:id="@+id/btnSelectProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSalvarProduto"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="-4dp"
+        android:layout_toEndOf="@+id/btnSalvarProduto"
+        android:text="SELECIONAR" />
+
+    <Button
+        android:id="@+id/btnDeleteProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnSalvarProduto"
+        android:layout_alignTop="@+id/btnSalvarProduto"
+        android:layout_marginStart="-123dp"
+        android:layout_marginTop="-3dp"
+        android:text="DELETAR" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/id_Produto_editText"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="19dp"
+        android:layout_toStartOf="@+id/id_Produto_editText"
+        android:text="ID" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/descricao_produto_editText"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toStartOf="@+id/descricao_produto_editText"
+        android:text="DESCRICAO" />
+
+    <TextView
+        android:id="@+id/produtosList_textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnSalvarProduto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

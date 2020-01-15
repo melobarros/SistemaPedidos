@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/cpf_item_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="28dp"/>
+
+    <EditText
+        android:id="@+id/id_produto_item_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cpf_item_editText"
+        android:layout_alignStart="@+id/cpf_item_editText"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/incluirItem_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_produto_item_editText"
+        android:layout_alignStart="@+id/id_produto_item_editText"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="64dp"
+        android:text="INCLUIR" />
+
+    <TextView
+        android:id="@+id/listaProdutos_items_textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/incluirItem_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cpf_item_editText"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toStartOf="@+id/cpf_item_editText"
+        android:text="CPF" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/id_produto_item_editText"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="22dp"
+        android:layout_toStartOf="@+id/id_produto_item_editText"
+        android:text="ID PRODUTO" />
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/parent_layout">
+
+
+    <Button
+        android:id="@+id/btnSalvarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toStartOf="@+id/textCliente"
+        android:text="SALVAR CLIENTE" />
+
+    <TextView
+        android:id="@+id/clientes_textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnSalvarCliente"
+        android:layout_marginTop="35dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/nome_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/sobrenome_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nome_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/cpf_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sobrenome_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nome_editText"
+        android:layout_marginTop="-34dp"
+        android:layout_marginEnd="43dp"
+        android:layout_toStartOf="@+id/nome_editText"
+        android:text="Nome:" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sobrenome_editText"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="13dp"
+        android:layout_toStartOf="@+id/sobrenome_editText"
+        android:text="Sobrenome:" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cpf_editText"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toStartOf="@+id/cpf_editText"
+        android:text="CPF:" />
+
+    <EditText
+        android:id="@+id/id_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cpf_editText"
+        android:layout_marginStart="-70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-214dp"
+        android:layout_toStartOf="@+id/cpf_editText"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/id_editText"
+        android:layout_alignBottom="@+id/id_editText"
+        android:layout_marginStart="-72dp"
+        android:layout_marginBottom="11dp"
+        android:text="ID" />
+
+    <Button
+        android:id="@+id/btnSelectCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSalvarCliente"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="-54dp"
+        android:layout_toEndOf="@+id/btnSalvarCliente"
+        android:text="SELECIONAR" />
+
+    <Button
+        android:id="@+id/btnDeleteCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSalvarCliente"
+        android:layout_marginTop="-48dp"
+        android:layout_marginEnd="46dp"
+        android:layout_toStartOf="@+id/btnSalvarCliente"
+        android:text="DELETAR" />
+
+
+</RelativeLayout>
